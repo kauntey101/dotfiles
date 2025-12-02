@@ -44,7 +44,10 @@ SHELL_INCLUDES="$HOME/.config/shell/"
 . "$SHELL_INCLUDES/aliasses"
 
 # exports
-. "$SHELL_INCLUDES/exports"
+if [[ -z "${EXPORTS_LOADED+x}" ]]; then
+    EXPORTS_LOADED=1
+    source "$SHELL_INCLUDES/exports"
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
