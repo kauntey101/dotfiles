@@ -1,0 +1,5 @@
+# This is a local stow ignore list 
+# which contains perl regular expression 
+
+^/README.*
+\.git
