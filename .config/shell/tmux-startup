@@ -1,5 +1,3 @@
-#!/bin/sh
-
 SESSION="main" 
 
 # create a new tmux session named "main" with a window named "terminal" if not exists
