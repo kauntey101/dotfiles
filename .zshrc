@@ -33,7 +33,7 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # custom config 
-SHELL_INCLUDES=".config/shell/"
+SHELL_INCLUDES="$HOME/.config/shell/"
 
 # tmux 
 . "$SHELL_INCLUDES/tmux-startup"
