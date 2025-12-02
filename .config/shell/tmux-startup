@@ -1,0 +1,8 @@
+#!/bin/sh
+
+SESSION="main" 
+
+# create a new tmux session named "main" with a window named "terminal" if not exists
+if ! tmux has-session -t "$SESSION" 2>/dev/null; then
+    tmux new-session -d -s "$SESSION" -n terminal
+fi

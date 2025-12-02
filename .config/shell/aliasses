@@ -1,0 +1,10 @@
+# mysql --login-path alias
+# this function is used to login into mysql servers which info is saved in config 
+mysqlx() {
+    local login_path="$1"
+    shift
+    mysql --login-path="$login_path" "$@"
+}
+
+alias ls="ls --color"
+alias l="ls --color -CF"
