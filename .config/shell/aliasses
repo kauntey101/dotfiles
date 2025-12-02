@@ -6,5 +6,4 @@ mysqlx() {
     mysql --login-path="$login_path" "$@"
 }
 
-alias ls="ls --color"
-alias l="ls --color -CF"
+alias ls="colorls"

@@ -49,6 +49,9 @@ if [[ -z "${EXPORTS_LOADED+x}" ]]; then
     source "$SHELL_INCLUDES/exports"
 fi
 
+# enable colorls flags tab completions 
+source $(dirname $(gem which colorls))/tab_complete.sh
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
