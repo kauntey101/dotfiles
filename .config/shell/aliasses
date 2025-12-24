@@ -6,4 +6,13 @@ mysqlx() {
     mysql --login-path="$login_path" "$@"
 }
 
+
+mysqldumpx() {
+    local login_path="$1"
+    shift
+    mysqldump --login-path="$login_path" "$@"
+}
+
+
 alias ls="colorls"
+alias cls="clear"
